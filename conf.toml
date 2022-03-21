@@ -1,0 +1,173 @@
+Debug = true
+LogFileName = 'sa.log'
+LogOutputs = ['file', 'console']
+Version = '1.0'
+[APIGateway]
+AddressField = 'IP'
+BreakerDashboard = true
+BreakerErrorPercentThreshold = 10.0
+BreakerLimitAPI = true
+BreakerLimitIP = true
+BreakerLimitUser = true
+BreakerMaxConcurrentRequest = 10.0
+BreakerRequestTimeout = 10.0
+BreakerRequestVolumeThreshold = 10.0
+BreakerSleepWindow = 10.0
+Disabled = false
+EID = '2866cde4b7644d0dafe9812193865333'
+UseBreaker = false
+UserField = 'User'
+
+[AdminService]
+Disabled = false
+EID = 'afb7e55584f74bbe89f3e730a016b372'
+Fails = 0.0
+MaxFails = 3.0
+Name = 'admin'
+
+[ApAuthService]
+Disabled = false
+EID = 'c21f4f863a974fb182c9ae4cf05dc142'
+InAddressField = 'IP'
+InAgentField = 'User-Agent'
+Name = 'ap'
+OutAddressField = 'ip'
+OutAgentField = 'agent'
+PwdEncoding = 'base64'
+PwdMaxLen = 8.0
+PwdMinLen = 6.0
+PwdNumberAndLetter = true
+PwdSecret = ''
+PwdSymbol = false
+PwdSymbols = '{{base64:JF4mKigpPXx7fSc6IVtdXy0rfi48Pg==}}'
+PwdUpperAndLowerLetter = false
+SessionCreateSlot = 'createToken'
+SessionRevokeSlot = 'revokeToken'
+SessionService = 'session'
+SessionVerifySlot = 'verifyToken'
+
+[ChatService]
+Disabled = false
+EID = '8caf5702a4b64947b1918a71dd048993'
+Name = 'chat'
+
+[DataService]
+Disabled = false
+EID = '6fbf8fe3471e44cc907836080497864c'
+Name = 'data'
+
+[FileService]
+CleanFs = false
+Disabled = false
+EID = '6430dee91b5a4c4e9e3d4841f3339800'
+Hash = 'sha256'
+MinioBucket = ''
+Name = 'file'
+Storage = 'fs'
+
+[GormPlugin]
+DBDataDir = 'data'
+DBInitAfter = 30000000000.0
+DBInitDB = false
+DBMaxIdleConns = 0.0
+DBMaxOpenConns = 0.0
+DBName = 'sa'
+DBPort = 3306.0
+DBPwd=''
+DBReset = false
+DBServer = '127.0.0.1'
+DBType = 'mysql'
+DBUser = ''
+Disabled = false
+EID = '6268eb565c5a4405aaf6112382d2ff2a'
+
+[JsonPacker]
+Disabled = false
+EID = 'ec158ffd32b94390ba91cd16fd20bf5e'
+
+[LocalRouter]
+Disabled = false
+EID = '966a90828577439da8e8c7806fa0c358'
+
+[LockerMiddleware]
+APIList = []
+Disabled = false
+EID = 'db4d1232d3324df0b3f9497fac0b1ae7'
+LockDuration = 0.0
+MaxFails = 10.0
+Model = 'whitelist'
+UserField = 'User'
+AddressField = "IP"
+
+[MemCachePlugin]
+CleanupDuration = 10.0
+Disabled = false
+EID = '9cbd0924a7424b5d8faa1b0fab2a9193'
+ExpireDuration = 10.0
+
+[ModelService]
+Disabled = false
+EID = '2dbdfbc87a194c8694ca386782ea5797'
+InviteCode = ''
+Name = 'model'
+
+[NsqPlugin]
+Disabled = false
+EID = 'c979b9e182cb4ffd818e437f8db9d993'
+ServerAddr = '127.0.0.1:4150'
+
+[PayService]
+Disabled = false
+EID = 'da70b48bb173435cae7d6081d2d7e010'
+Name = 'pay'
+
+[PermMiddleware]
+Disabled = false
+EID = '0a0d6967c0a04d0ebaaf32a950c7c812'
+
+[Server]
+Disabled = false
+EID = '53895882634d4163ab50bbc3a33fc4d5'
+MaxProcs = 1.0
+
+[SessionMiddleware]
+Disabled = false
+EID = '8ebda0ac52f44ca682c1d33c013612b5'
+InAddressField = 'IP'
+InAgentField = 'Agent'
+InTokenField = 'Token'
+InUserField = 'User'
+OutAddressField = 'ip'
+OutAgentField = 'agent'
+OutTokenField = 'token'
+OutUserField = 'user'
+SessionService = 'session'
+VerifySlot = 'verifyToken'
+WhiteList = ['v1:registerUser,login']
+
+[SessionService]
+CheckAgent = false
+CheckIP = false
+CheckUser = true
+Disabled = false
+EID = '1f99acfd20b54aa69f8ee5a97f6e54dc'
+Name = 'session'
+SessionsPerUser = 1.0
+TokenExpire = 10080.0
+
+[WebConnector]
+AddressField = 'IP'
+AppKey = '1234'
+AppSecret = '1234'
+BodyLimit = 4.0
+Disabled = false
+EID = 'bf5fbdff4bac47db89edf7bc7ddfce0b'
+Lang = ''
+Packer = 'JsonPacker'
+Port = 8888
+SignMethod = 'sha256'
+Timeout = 5.0
+Tls = false
+TlsCertPath = ''
+TlsKeyPath = ''
+

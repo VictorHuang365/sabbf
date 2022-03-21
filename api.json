@@ -1,0 +1,208 @@
+{
+  "name": "HGuru后台API",
+  "versions": [
+    {
+      "version": "v1",
+      "apis": [
+        {
+          "name": "login",
+          "desc": "用户登录",
+          "disabled": false,
+          "endpoint": {
+            "service": "ap",
+            "slot": "login"
+          }
+        },
+        {
+          "name": "registerUser",
+          "desc": "用户注册",
+          "disabled": false,
+          "endpoint": {
+            "service": "model",
+            "slot": "registerUser"
+          }
+        },
+        {
+          "name": "userBalance",
+          "desc": "获取用户余额",
+          "disabled": false,
+          "endpoint": {
+            "service": "pay",
+            "slot": "getBalance"
+          }
+        },
+        {
+          "name": "clearFlow",
+          "desc": "清除用户流水",
+          "disabled": false,
+          "endpoint": {
+            "service": "pay",
+            "slot": "clearFlow"
+          }
+        },
+        {
+          "name": "payAppOrder",
+          "desc": "支付App订单",
+          "disabled": false,
+          "endpoint": {
+            "service": "pay",
+            "slot": "payAppOrder"
+          }
+        },
+        {
+          "name": "payOtherOrder",
+          "desc": "代支付App订单",
+          "disabled": false,
+          "endpoint": {
+            "service": "pay",
+            "slot": "payOtherOrder"
+          }
+        },
+        {
+          "name": "checkLogin",
+          "desc": "检查登录",
+          "disabled": false,
+          "endpoint": {
+            "service": "ap",
+            "slot": "checkLogin"
+          }
+        },
+        {
+          "name": "changePwd",
+          "desc": "修改用户密码",
+          "disabled": false,
+          "endpoint": {
+            "service": "ap",
+            "slot": "changePwd"
+          }
+        },
+        {
+          "name": "logout",
+          "desc": "用户登出",
+          "disabled": false,
+          "endpoint": {
+            "service": "ap",
+            "slot": "logout"
+          }
+        },
+        {
+          "name": "queryData",
+          "desc": "数据查询",
+          "disabled": false,
+          "endpoint": {
+            "service": "data",
+            "slot": "query"
+          }
+        },
+        {
+          "name": "saveData",
+          "desc": "保存数据",
+          "disabled": false,
+          "endpoint": {
+            "service": "data",
+            "slot": "create"
+          }
+        },
+        {
+          "name": "updateData",
+          "desc": "更新数据",
+          "disabled": false,
+          "endpoint": {
+            "service": "data",
+            "slot": "update"
+          }
+        },
+        {
+          "name": "deleteData",
+          "desc": "删除数据",
+          "disabled": false,
+          "endpoint": {
+            "service": "data",
+            "slot": "delete"
+          }
+        },
+        {
+          "name": "uploadFile",
+          "desc": "上传文件",
+          "disabled": false,
+          "endpoint": {
+            "service": "file",
+            "slot": "upload"
+          }
+        },
+        {
+          "name": "downloadFile",
+          "desc": "下载/预览文件",
+          "disabled": false,
+          "endpoint": {
+            "service": "file",
+            "slot": "download"
+          }
+        },
+        {
+          "name": "changePwd",
+          "desc": "修改密码",
+          "disabled": false,
+          "endpoint": {
+            "service": "ap",
+            "slot": "changePwd"
+          }
+        },
+        {
+          "name": "resetPwd",
+          "desc": "重置密码",
+          "disabled": false,
+          "endpoint": {
+            "service": "ap",
+            "slot": "resetPwd"
+          }
+        },
+        {
+          "name": "reviewUser",
+          "desc": "用户审核",
+          "disabled": false,
+          "endpoint": {
+            "service": "model",
+            "slot": "reviewUser"
+          }
+        },
+        {
+          "name": "revokeChat",
+          "desc": "撤回聊天",
+          "disabled": false,
+          "endpoint": {
+            "service": "chat",
+            "slot": "revoke"
+          }
+        },
+        {
+          "name": "clearChat",
+          "desc": "清除聊天记录",
+          "disabled": false,
+          "endpoint": {
+            "service": "chat",
+            "slot": "clear"
+          }
+        },
+        {
+          "name": "shopUserBalances",
+          "desc": "店主查看成员余额",
+          "disabled": false,
+          "endpoint": {
+            "service": "model",
+            "slot": "shopUserBalances"
+          }
+        },
+        {
+          "name": "appInfo",
+          "desc": "获取App版本信息",
+          "disabled": false,
+          "endpoint": {
+            "service": "model",
+            "slot": "appInfo"
+          }
+        },
+      ]
+    }
+  ]
+}

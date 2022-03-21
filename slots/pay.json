@@ -1,0 +1,91 @@
+[
+  {
+    "name": "getBalance",
+    "lang": "go",
+    "impl": "GetBalance",
+    "params": [
+      {
+        "name": "user_uid",
+        "type": "Number",
+        "required": true,
+        "validator": ""
+      }
+    ]
+  },
+  {
+    "name": "payAppOrder",
+    "lang": "go",
+    "impl": "PayAppOrder",
+    "params": [
+      {
+        "name": "order_uid",
+        "type": "Number",
+        "required": true,
+        "validator": ""
+      },
+      {
+        "name": "way",
+        "type": "Number",
+        "required": true,
+        "validator": ""
+      },
+      {
+        "name": "payer_uid",
+        "type": "Number",
+        "required": true,
+        "validator": ""
+      }
+    ]
+  },
+  {
+    "name": "payOtherOrder",
+    "lang": "go",
+    "impl": "PayOtherOrder",
+    "params": [
+      {
+        "name": "order_uid",
+        "type": "Number",
+        "required": true,
+        "validator": ""
+      },
+      {
+        "name": "way",
+        "type": "Number",
+        "required": true,
+        "validator": ""
+      },
+      {
+        "name": "payer_uid",
+        "type": "Number",
+        "required": true,
+        "validator": ""
+      }
+    ]
+  },
+  {
+    "name": "payWapOrder",
+    "lang": "go",
+    "impl": "PayAppOrder",
+    "params": [
+      {
+        "name": "order_uid",
+        "type": "Number",
+        "required": true,
+        "validator": ""
+      }
+    ]
+  },
+  {
+    "name": "clearFlow",
+    "lang": "go",
+    "impl": "ClearFlow",
+    "params": [
+      {
+        "name": "user_uid",
+        "type": "Number",
+        "required": true,
+        "validator": ""
+      }
+    ]
+  }
+]

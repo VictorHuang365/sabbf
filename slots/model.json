@@ -1,0 +1,90 @@
+[
+  {
+    "name": "registerUser",
+    "lang": "go",
+    "impl": "RegisterUser",
+    "params": [
+      {
+        "name": "mobile",
+        "type": "String",
+        "required": true,
+        "validator": ""
+      },
+      {
+        "name": "name",
+        "type": "String",
+        "required": true,
+        "validator": ""
+      },
+      {
+        "name": "password",
+        "type": "String",
+        "required": true,
+        "validator": ""
+      },
+      {
+        "name": "code",
+        "type": "String",
+        "required": true,
+        "validator": ""
+      }
+    ]
+  },
+  {
+    "name": "shopUserBalances",
+    "lang": "go",
+    "impl": "ShopUserBalances",
+    "params": [
+      {
+        "name": "owner_uid",
+        "type": "Number",
+        "required": true,
+        "validator": ""
+      }
+    ]
+  },
+  {
+    "name": "appInfo",
+    "lang": "go",
+    "impl": "AppInfo",
+    "params": [
+    ]
+  },
+  {
+    "name": "updateAppInfo",
+    "lang": "go",
+    "impl": "UpdateAppInfo",
+    "params": [
+      {
+        "name": "version",
+        "type": "Number",
+        "required": false,
+        "validator": ""
+      },
+      {
+        "name": "forced",
+        "type": "Bool",
+        "required": false,
+        "validator": ""
+      },
+      {
+        "name": "size",
+        "type": "String",
+        "required": false,
+        "validator": ""
+      },
+      {
+        "name": "download_url",
+        "type": "String",
+        "required": false,
+        "validator": ""
+      },
+      {
+        "name": "reviewing",
+        "type": "Bool",
+        "required": false,
+        "validator": ""
+      }
+    ]
+  }
+]

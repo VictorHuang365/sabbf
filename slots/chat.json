@@ -1,0 +1,86 @@
+[
+  {
+    "name": "send",
+    "lang": "go",
+    "impl": "Send",
+    "params": [
+      {
+        "desc": "消息类型",
+        "name": "type",
+        "type": "String",
+        "required": true,
+        "validator": ""
+      },
+      {
+        "desc": "接受者UID",
+        "name": "receiver_uid",
+        "type": "Number",
+        "required": true,
+        "validator": ""
+      },
+      {
+        "desc": "发送者UID",
+        "name": "sender_uid",
+        "type": "Number",
+        "required": true,
+        "validator": ""
+      },
+      {
+        "desc": "消息内容",
+        "name": "content",
+        "type": "Object",
+        "required": true,
+        "validator": ""
+      }
+    ]
+  },
+  {
+    "name": "revoke",
+    "lang": "go",
+    "impl": "Revoke",
+    "params": [
+      {
+        "desc": "接受者UID",
+        "name": "receiver_uid",
+        "type": "Number",
+        "required": true,
+        "validator": ""
+      },
+      {
+        "desc": "发送者UID",
+        "name": "sender_uid",
+        "type": "Number",
+        "required": true,
+        "validator": ""
+      },
+      {
+        "desc": "消息UUID",
+        "name": "uuid",
+        "type": "String",
+        "required": true,
+        "validator": ""
+      }
+    ]
+  },
+  {
+    "name": "clear",
+    "lang": "go",
+    "impl": "Clear",
+    "params": [
+      {
+        "desc": "接受者UID",
+        "name": "receiver_uid",
+        "type": "Number",
+        "required": true,
+        "validator": ""
+      },
+      {
+        "desc": "发送者UID",
+        "name": "sender_uid",
+        "type": "Number",
+        "required": true,
+        "validator": ""
+      }
+    ]
+  }
+]

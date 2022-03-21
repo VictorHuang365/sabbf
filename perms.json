@@ -1,0 +1,146 @@
+[
+  {
+    "desc": "检查登录",
+    "disabled": false,
+    "version": "v1",
+    "api": "checkLogin",
+    "if": "true",
+    "condition": "IsSelf(user,User)"
+  },
+  {
+    "desc": "用户修改密码",
+    "disabled": false,
+    "version": "v1",
+    "api": "changePwd",
+    "if": "true",
+    "condition": "IsSelf(user,User)"
+  },
+  {
+    "desc": "获取用户余额",
+    "disabled": false,
+    "version": "v1",
+    "api": "userBalance",
+    "if": "true",
+    "condition": "IsSelfByUID(user_uid,User)  || IsOwner(user_uid,User) || IsStaff(user_uid,User) || IsMonitor(User)"
+  },
+  {
+    "desc": "获取用户流水",
+    "disabled": false,
+    "version": "v1",
+    "api": "queryData",
+    "if": "key=='flow'",
+    "condition": "CanQuery(filters.conditions,User) || IsMonitor(User)"
+  },
+  {
+    "desc": "调整用户余额",
+    "disabled": false,
+    "version": "v1",
+    "api": "changeBalance",
+    "if": "true",
+    "condition": "IsOwner(user_uid,User) || IsStaff(user_uid, User) || IsMonitor(User)"
+  },
+  {
+    "desc": "保存用户信息",
+    "disabled": false,
+    "version": "v1",
+    "api": "saveData",
+    "if": "key=='user'",
+    "condition": "IsSelf(user,User) || IsOwner(user_uid,User) || IsStaff(user_uid,User) || IsMonitor(User)"
+  },
+  {
+    "desc": "店主重置密码",
+    "disabled": false,
+    "version": "v1",
+    "api": "resetPwd",
+    "if": "true",
+    "condition": "IsShopMemberByMobile(user,User)  || IsMonitor(User)"
+  },
+  {
+    "desc": "删除用户",
+    "disabled": false,
+    "version": "v1",
+    "api": "deleteData",
+    "if": "key=='user'",
+    "condition": "IsMonitor(User)"
+  },
+  {
+    "desc": "删除店铺用户",
+    "disabled": false,
+    "version": "v1",
+    "api": "deleteData",
+    "if": "key=='shop_user'",
+    "condition": "IsMonitor(User) || IsManagerByShopIDs(ids,User)"
+  },
+  {
+    "desc": "清除用户流水",
+    "disabled": false,
+    "version": "v1",
+    "api": "clearFlow",
+    "if": "true",
+    "condition": "IsOwner(user_uid,User) || IsStaff(user_uid,User) || IsMonitor(User)"
+  },
+  {
+    "desc": "创建店铺",
+    "disabled": false,
+    "version": "v1",
+    "api": "saveData",
+    "if": "key=='shop",
+    "condition": "IsMonitor(User)"
+  },
+  {
+    "desc": "删除店铺",
+    "disabled": false,
+    "version": "v1",
+    "api": "deleteData",
+    "if": "key=='shop",
+    "condition": "IsMonitor(User)"
+  },
+  {
+    "desc": "修改用户店铺关系",
+    "disabled": false,
+    "version": "v1",
+    "api": "saveData",
+    "if": "key=='shop_user",
+    "condition": "IsMonitor(User) || IsOwner(user_uid,User) "
+  },
+  {
+    "desc": "修改用户店铺关系",
+    "disabled": false,
+    "version": "v1",
+    "api": "updateData",
+    "if": "key=='shop_user",
+    "condition": "IsMonitor(User) || IsOwner(user_uid,User) "
+  },
+  {
+    "desc": "浏览用户",
+    "disabled": false,
+    "version": "v1",
+    "api": "queryData",
+    "if": "key=='user",
+    "condition": "IsMonitor(User)"
+  },
+  {
+    "desc": "浏览店铺成员余额",
+    "disabled": false,
+    "version": "v1",
+    "api": "shopUserBalances",
+    "if": "true",
+    "condition": "IsMonitor(User) || IsSelfByUID(owner_uid, User)"
+  },
+  {
+    "desc": "更新AppInfo",
+    "disabled": false,
+    "version": "v1",
+    "api": "updateAppInfo",
+    "if": "true",
+    "condition": "IsMonitor(User)"
+  },
+  {
+    "desc": "店主注资",
+    "disabled": false,
+    "version": "v1",
+    "api": "fund",
+    "if": "true",
+    "condition": "IsMonitor(User)"
+  }
+]
